@@ -1,3 +1,7 @@
 .center {
   margin: auto;
 }
+
+#result {
+  display: none;
+}
