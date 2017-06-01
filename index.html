@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script href="js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script href="js/scripts.js" type="text/javascript"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Survey</h1>
+          <p>
+            We're doing a user survey! Please enter the requested information below.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Personal Data</h1>
+        <div>
+          <div class="row">
+            <form id="formOne">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="name">Your First Name</label>
+                  <input id="name" class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="food">Your Favorite Food</label>
+                  <input id="food" class="form-control" type="text">
+                </div>
+                <div class="center">
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="music">Your Favorite Music</label>
+                  <input id="music" class="form-control" type="text">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Eye Color</h1>
+        <div class="radio">
+          <label>
+            <input type="radio" name="eyes" value="hazel">
+            Hazel
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="eyes" value="blue">
+            Blue
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="eyes" value="green">
+            Green
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="eyes" value="brown">
+            Brown
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="eyes" value="mixed">
+            Mixed
+          </label>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Birthday</h1>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+      </div>
+      <div class="container">
+        <h1>Favorite Color</h1>
+        <div class="form-group">
+          <label for="color">What is your favorite color? (Click on color bar to bring up color picker.)</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
