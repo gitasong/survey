@@ -11,89 +11,93 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h1>Survey</h1>
-          <p>
-            We're doing a user survey! Please enter the requested information below.
-          </p>
+          <div id="header">
+            <h1>Survey</h1>
+            <p>
+              We're doing a user survey! Please enter the requested information below.
+            </p>
+          </div>
         </div>
       </div>
-      <form id="personalData">
-        <div class="container">
-          <h1>Personal Data</h1>
-            <div class="textInput">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="name">Your First Name</label>
-                    <input id="name" class="form-control" type="text">
+      <div class="row">
+        <form id="personalData">
+          <div class="container">
+            <h1>Personal Data</h1>
+              <div class="textInput">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="name">Your First Name</label>
+                      <input id="name" class="form-control" type="text">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="food">Your Favorite Food</label>
-                    <input id="food" class="form-control" type="text">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="food">Your Favorite Food</label>
+                      <input id="food" class="form-control" type="text">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="music">Your Favorite Music</label>
-                    <input id="music" class="form-control" type="text">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="music">Your Favorite Music</label>
+                      <input id="music" class="form-control" type="text">
+                    </div>
                   </div>
                 </div>
               </div>
+          </div>
+          <div class="container">
+            <h1>Eye Color</h1>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eyes" value="hazel">
+                Hazel
+              </label>
             </div>
-        </div>
-        <div class="container">
-          <h1>Eye Color</h1>
-          <div class="radio">
-            <label>
-              <input type="radio" name="eyes" value="hazel">
-              Hazel
-            </label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eyes" value="blue">
+                Blue
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eyes" value="green">
+                Green
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eyes" value="brown" checked>
+                Brown
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="eyes" value="mixed">
+                Mixed
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="eyes" value="blue">
-              Blue
-            </label>
+          <div class="container">
+            <h1>Birthday</h1>
+            <div class="form-group">
+              <label for="birth">Date of birth:</label>
+              <input id="birth" class="form-control" type="date">
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="eyes" value="green">
-              Green
-            </label>
+          <div class="container">
+            <h1>Favorite Color</h1>
+            <div class="form-group">
+              <label for="color">What is your favorite color? (Click on color bar to bring up color picker.)</label>
+              <input id="color" class="form-control" type="color">
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="eyes" value="brown" checked>
-              Brown
-            </label>
+          <div id="buttn">
+            <button type="submit" class="btn">Submit</button>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="eyes" value="mixed">
-              Mixed
-            </label>
-          </div>
-        </div>
-        <div class="container">
-          <h1>Birthday</h1>
-          <div class="form-group">
-            <label for="birth">Date of birth:</label>
-            <input id="birth" class="form-control" type="date">
-          </div>
-        </div>
-        <div class="container">
-          <h1>Favorite Color</h1>
-          <div class="form-group">
-            <label for="color">What is your favorite color? (Click on color bar to bring up color picker.)</label>
-            <input id="color" class="form-control" type="color">
-          </div>
-        </div>
-        <div class="center">
-          <button type="submit" class="btn">Submit</button>
-        </div>
-      </form>
+        </form>
+      </div>
       <p id="result">
         Your name is <span class="name"></span>, your favorite food is <span class="food"></span>, and your favorite jam music is <span class="music"></span>. Unfortunately, your eye color is <span class="eyes"></span> and the accident of your birth happened on <span class="birth"></span>, and your favorite color is a stunning <span class="color"></span>.
       </p>

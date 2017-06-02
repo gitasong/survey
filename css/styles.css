@@ -1,5 +1,13 @@
-.center {
-  margin: auto;
+#header {
+  margin-left: 85px;
+}
+
+/*#favcolor {
+  margin-bottom: 40px;
+}*/
+
+#buttn {
+  margin-left: 100px;
 }
 
 #result {
